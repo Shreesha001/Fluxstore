@@ -43,16 +43,16 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined, size: 25),
+            icon: Icon(Icons.home_outlined, size: 28),
             label: "Shop",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined, size: 25),
-            label: "Market",
+            icon: Icon(Icons.search_outlined, size: 25),
+            label: "Search",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history_outlined, size: 25),
-            label: "History",
+            icon: Icon(Icons.shopping_bag_outlined, size: 25),
+            label: "Cart",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outlined, size: 25),

@@ -1,4 +1,3 @@
-// colors.dart
 import 'package:flutter/material.dart';
 
 class AppColors {
@@ -37,11 +36,3 @@ class AppColors {
   static const cardBackground = white;
   static const dividerColor = gray200;
 }
-
-/* USAGE EXAMPLES:
-1. Primary button: AppColors.primaryButton
-2. Error text: AppColors.error
-3. App bar: AppColors.appBarBackground
-4. Body text: AppTextColors.primary
-5. Disabled button: AppColors.gray200
-*/

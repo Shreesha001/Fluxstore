@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluxstore/screens/auth_screens/login_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
   void logoutUser(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
+
+    // Navigate to login screen after logout
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginScreen()),
+    );
   }
 
   @override
@@ -30,8 +37,10 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            logoutUser(context);
-                            Navigator.pop(context);
+                            Navigator.pop(context); // Close the dialog
+                            logoutUser(
+                              context,
+                            ); // Sign out and go to login screen
                           },
                           child: const Text(
                             'Logout',

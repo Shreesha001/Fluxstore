@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluxstore/responsive/mobile_screen_layout.dart';
 import 'package:fluxstore/screens/auth_screens/login_screen.dart';
-import 'package:fluxstore/screens/splash_screen.dart';
+import 'package:fluxstore/screens/splash/splash_screen.dart';
 
 class RootScreen extends StatefulWidget {
   const RootScreen({super.key});

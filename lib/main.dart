@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:fluxstore/firebase_options.dart';
-import 'package:fluxstore/screens/splash_wrapper.dart'; // << wrapper we’ll create
+import 'package:fluxstore/screens/splash/splash_wrapper.dart'; // << wrapper we’ll create
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
